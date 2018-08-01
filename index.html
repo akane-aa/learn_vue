@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Vue.js App</title>
+<link hrel="main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <button v-on:click="show=!show">ぼたん</button>
+    <transition class="demo">
+      <p v-if="show">ハロー</p>
+    </transition>
+  </div>
+  <script src="vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
